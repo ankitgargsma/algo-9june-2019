@@ -11,7 +11,7 @@ void phone_keypad(char *input,char *output,int i,int j){
 		return;
 	}
 	//rec cas e
-	int digit = input[i] - '0';
+	int digit = input[i] - '0';  // if input is suppose 23 than initially digit will contain 2
 	for(int k=0;k<strlen(mapping[digit]);k++){
 		char ch = mapping[digit][k];
 		output[j] = ch;
